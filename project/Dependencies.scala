@@ -25,7 +25,10 @@ object Dependencies {
   )
 
   val test: Seq[ModuleID] = Seq(
-    "org.scalatest" %% "scalatest"                     % "3.2.14" % Test,
-    "org.typelevel" %% "cats-effect-testing-scalatest" % "1.4.0"  % Test
+    "org.scalatest"         %% "scalatest"                     % "3.2.14" % Test,
+    "org.scalatest"         %% "scalatest"                     % "3.2.14" % Test,
+    "org.typelevel"         %% "cats-effect-testing-scalatest" % "1.4.0"  % Test,
+    "org.scalamock"         %% "scalamock"                     % "5.2.0"  % Test,
+    "com.xebialabs.restito" % "restito"                        % "1.1.0"  % Test,
   )
 }

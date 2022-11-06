@@ -16,3 +16,6 @@ lazy val root = (project in file("."))
     ),
     javaOptions += "-Dconfig.file=src/test/resources/application.conf"
   )
+  .settings(
+    libraryDependencies ++= Dependencies.test,
+  )

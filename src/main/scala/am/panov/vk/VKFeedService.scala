@@ -13,7 +13,7 @@ import org.http4s.blaze.client.BlazeClientBuilder
 import org.http4s.circe._
 import org.http4s.client.Client
 
-class VKFeedService[F[_]: Async] private (config: VKConfig, client: Client[F]) {
+class VKFeedService[F[_]: Async](config: VKConfig, client: Client[F]) {
   import VKFeedService._
 
   implicit val postsResp: EntityDecoder[F, FeedResp] = jsonOf[F, FeedResp]
